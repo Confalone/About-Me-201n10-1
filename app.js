@@ -30,18 +30,18 @@ else {
 }
 
 var richardsHobby = prompt('Is Richard\'s favorite hobby playing basketball?').toLowerCase();
-console.log(user + 'answered question 3 ' + richardsHobby);
+console.log(user + ' answered question 3 ' + richardsHobby);
 if(richardsHobby === 'yes') {
     alert('Richard enjoys playing basketball');
     userPoints++;
 }
 else {
     alert('Nice try ' + user + '!');
-
 }
 
+
 var richardsFood = prompt('Is Richard\'s favorite food pizza?').toLowerCase();
-console.log(user + 'answered question 4 ' + richardsFood);
+console.log(user + ' answered question 4 ' + richardsFood);
 if(richardsFood === 'yes') {
     alert('Nice job ' + user +', Richard\'s favorite food is most def, PIZZA!');
     userPoints++;
