@@ -12,8 +12,9 @@ h1 {
 }
 
 h2 {
+    font-weight: italic;
     font-size: 2em;    
-    color: orange;
+    color: black;
     text-align: center;
 }
 
@@ -21,8 +22,16 @@ li {
     font-variant: small-caps;
     font-size: 1em;
     text-align: center;
-    color: green;
+    color: black;
     margin: 0;
     padding: 0;
     list-style: none; 
+}
+
+img {
+    opacity: 0.3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
