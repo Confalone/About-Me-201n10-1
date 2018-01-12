@@ -9,19 +9,19 @@ var user = prompt('What is your Name?');
 console.log('User\'s name: ' + user);
 alert('Hi ' + user + '! I am so glad you want to play Richard\'s game.');
 
-var whichAsian = prompt('Is Richard\'s nationality Chinese? type yes or no').toLowerCase();
+var whichAsian = prompt('Is Richard\'s nationality Chinese? type yes or no').toLowerCase(); //check this out .becomes lowercase.
 console.log(user + ' answered Question 1 ' + whichAsian);
 
-if(whichAsian === 'yes'){
+if(whichAsian === 'yes' || whichAsian === 'y'){
     alert('You are incorrect! Richard is Korean!');
 } else {   
     alert('You are correct! Richard is Korean!');
     userPoints++;
 }
 
-var richardsHometown = prompt(user + ', Is Richard born in Los Angeles?').toLowerCase();
+var richardsHometown = prompt(user + ', Is Richard born in Los Angeles? Please type yes or no.').toLowerCase();
 console.log(user + ' answered ' + richardsHometown);
-if(richardsHometown === 'yes') {
+if(richardsHometown === 'yes' || richardsHometown === 'Yes') {
     alert('Great job ' +  user + ',  Richard is born in Los Angeles');
     userPoints++;
 }
@@ -29,9 +29,9 @@ else {
     alert('Richard is from Los Angeles!');
 }
 
-var richardsHobby = prompt('Is Richard\'s favorite hobby playing basketball?').toLowerCase();
+var richardsHobby = prompt('Is Richard\'s favorite hobby playing basketball? Please type yes or no.').toLowerCase();
 console.log(user + ' answered question 3 ' + richardsHobby);
-if(richardsHobby === 'yes') {
+if(richardsHobby === 'yes' || richardsHobby === 'Yes') {
     alert('Richard enjoys playing basketball');
     userPoints++;
 }
@@ -58,7 +58,7 @@ if(richardsColor === 'yes') {
    }
 
 else {
-    alert('Nice try' + user + 'hope you have better luck next time!')
+    alert('Nice try ' + user + 'hope you have better luck next time!')
 }
     alert(user + ' got ' + userPoints + ' questions correct!  Nicely done ' + user);
 
