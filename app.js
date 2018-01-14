@@ -86,12 +86,12 @@ var countryIncorrect = true;
 while(i<=6){
   var selectedCountry = prompt('What country did Richard enjoy the most when on vacation. Heres a list of options: ' + countries.toString()).toLowerCase();
   for(var j = 0; j < countries.length; j++){
-      if(selectedCountry === 'korea'){
-        alert('You are correct!');
-        userPoints++;
-        countryIncorrect = false;
-        break;
-      }
+    if(selectedCountry === 'korea'){
+      alert('You are correct!');
+      userPoints++;
+      countryIncorrect = false;
+      break;
+    }
   }
   if(!countryIncorrect){
     break;
@@ -103,18 +103,8 @@ while(i<=6){
 }
 
 if(userPoints <= 3){
-    alert(user + ', you got ' + userPoints + ' questions correct. Try harder next time');
-  }
-  else{
-    alert(user + ', you got ' + userPoints + ' questions correct. Nicely done!');
-  }
-  
-/*
-var richardsVaca = prompt('Can you guess a country I\ve been to except America?');
-console.log(richardsVaca);
-while(var i=0; i < 7, i++); {
-    console.log(i); 
-
-
+  alert(user + ', you got ' + userPoints + ' questions correct. Try harder next time');
 }
-*/
+else{
+  alert(user + ', you got ' + userPoints + ' questions correct. Nicely done!');
+}
