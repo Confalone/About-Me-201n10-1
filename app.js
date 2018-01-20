@@ -24,6 +24,7 @@ function richardSecondQ() {
   var richardsHometown = prompt(user + ', Is Richard born in Los Angeles? Please type yes/no or y/n.').toLowerCase();
   console.log(user + ' answered ' + richardsHometown);
 
+
   if(richardsHometown === 'yes' || richardsHometown === 'y') {
     alert('Great job ' + user + ',  Richard is born in Los Angeles');
     userPoints++;
